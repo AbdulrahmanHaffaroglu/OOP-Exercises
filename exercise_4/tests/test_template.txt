@@ -1,0 +1,79 @@
+# this is a template that is used to write the test code for all the test files
+
+
+import pytest
+
+# Import the class/function being tested
+from employee_payrol_system.models.full_time_employee import Full_time
+
+
+class TestFullTimeEmployee:
+
+    # -------------------------
+    # Object creation
+    # -------------------------
+
+    def test_creation(self):
+        # Arrange
+        employee = Full_time(...)
+
+        # Assert
+        assert employee.some_attribute == expected_value
+
+
+    # -------------------------
+    # Normal behavior
+    # -------------------------
+
+    def test_some_method(self):
+        # Arrange
+        employee = Full_time(...)
+
+        # Act
+        result = employee.some_method(...)
+
+        # Assert
+        assert result == expected_value
+
+
+    # -------------------------
+    # Properties / getters
+    # -------------------------
+
+    def test_some_getter(self):
+        employee = Full_time(...)
+
+        assert employee.some_property == expected_value
+
+
+    # -------------------------
+    # Setters / modification
+    # -------------------------
+
+    def test_some_setter(self):
+        employee = Full_time(...)
+
+        employee.some_property = new_value
+
+        assert employee.some_property == new_value
+
+
+    # -------------------------
+    # Invalid inputs
+    # -------------------------
+
+    def test_invalid_input(self):
+        with pytest.raises(ValueError):
+            Full_time(...)
+
+
+    # -------------------------
+    # Edge cases
+    # -------------------------
+
+    def test_edge_case(self):
+        employee = Full_time(...)
+
+        result = employee.some_method(...)
+
+        assert result == expected_value
