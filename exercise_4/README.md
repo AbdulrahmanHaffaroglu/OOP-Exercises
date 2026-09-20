@@ -37,6 +37,9 @@ tests/
 
 ## Installation
 
+Open the `exercise_4` folder itself as the VS Code workspace. It is the
+project root and contains `pyproject.toml`, `src/`, and `tests/`.
+
 Create and activate a virtual environment, then install the project and test dependency:
 
 ```bash
@@ -49,11 +52,10 @@ Windows PowerShell:
 .venv\Scripts\Activate.ps1
 ```
 
-Install the project and pytest:
+Install the project and its test dependency:
 
 ```bash
-python -m pip install -e .
-python -m pip install pytest
+python -m pip install -e ".[test]"
 ```
 
 ## Usage
