@@ -14,7 +14,10 @@ class Customer:
         self.cash_method = cash_method
         self.credit_card_method = credit_card_method
         self.bank_transfer_method = bank_transfer_method
-        self.payment_methods = None
+        self.payment_methods = []
+        for payment_method in (cash_method, bank_transfer_method, credit_card_method):
+            if payment_method is not None:
+                self.register_payment_method(payment_method)
 
         Customer.num += 1
 
@@ -76,7 +79,13 @@ class Customer:
 
 
     def check_order_status(self, order: OrderItem): 
-        order.order_status()
+        if order not in self.orders:
+            raise ValueError("you don't have this order")
+        return order.order_status()
+
+    def register_payment_method(self, payment_method):
+        if payment_method not in self.payment_methods:
+            self.payment_methods.append(payment_method)
 
 
     def pay_order(self, order_item, payment_method: Cash | CreditCard | BankTransfer, succeeds=True):
@@ -90,13 +99,12 @@ class Customer:
         if order_item.status == 'Cancelled':
             raise ValueError("this order is already cancelled")
 
-        self.payment_methods = [self.cash_method, self.bank_transfer_method, self.credit_card_method]
-        
-        if payment_method not in self.payment_methods:
+        if payment_method is None or payment_method not in self.payment_methods:
             raise ValueError("you don't own this payment method")
          
-        payment_method.pay(order_item, succeeds)
+        result = payment_method.pay(order_item, succeeds)
         print(f"total for Order-{order_item.id}: {order_item.final_total}")
+        return result
 
     def apply_discount(self, order_item, discount):
         if order_item not in self.orders:

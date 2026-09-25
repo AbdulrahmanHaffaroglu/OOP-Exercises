@@ -13,7 +13,7 @@ class TestPayments:
 
         result = customer.pay_order(order, Cash(customer), succeeds=False)
 
-        assert result is None
+        assert result is False
         assert order.is_paid is False
         assert order.status == "Pending"
 
@@ -40,6 +40,17 @@ class TestPayments:
         customer.cancel_order(cancelled_order)
         with pytest.raises(ValueError):
             customer.pay_order(cancelled_order, customer.cash_method)
+
+    def test_unregistered_payment_method_and_none_are_rejected(self):
+        customer = Customer("A", "contact")
+        other_customer = Customer("B", "contact")
+        order = customer.create_order([Dessert("Cake", "", 120, True)])
+        other_payment = Cash(other_customer)
+
+        with pytest.raises(ValueError):
+            customer.pay_order(order, other_payment)
+        with pytest.raises(ValueError):
+            customer.pay_order(order, None)
 
     def test_payment_freezes_final_total(self):
         customer = Customer("A", "contact")

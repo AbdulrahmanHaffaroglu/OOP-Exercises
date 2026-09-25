@@ -5,7 +5,10 @@ class OrderLine:
 
         self.menu_item = menu_item
         self.quantity = quantity
-        self.options = list(options or [])
+        self.options = sorted(
+            list(options or []),
+            key=lambda option: (option.name, option.price),
+        )
 
         option_group = getattr(menu_item, "sizes", None) or getattr(menu_item, "extras", None)
         if option_group is None:
@@ -21,7 +24,11 @@ class OrderLine:
         self.unit_price = menu_item.price + sum(option.price for option in self.options)
 
     def matches(self, menu_item, options):
-        return self.menu_item == menu_item and self.options == list(options or [])
+        normalized_options = sorted(
+            list(options or []),
+            key=lambda option: (option.name, option.price),
+        )
+        return self.menu_item == menu_item and self.options == normalized_options
 
     @property
     def total_price(self):

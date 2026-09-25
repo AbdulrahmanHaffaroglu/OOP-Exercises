@@ -18,7 +18,13 @@ class Restaurant:
         return self.menu.find_by_id(item_id)
 
     def incoming_orders(self):
-        return [order for order in Order.orders_list if order.status == 'Pending']
+        menu_items = set(self.menu.menu_items)
+        return [
+            order
+            for order in Order.orders_list
+            if order.status == 'Pending'
+            and any(line.menu_item in menu_items for line in order.menu_items)
+        ]
 
     @staticmethod
     def confirm_status(order_item, status):

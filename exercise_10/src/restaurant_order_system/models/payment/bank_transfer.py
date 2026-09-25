@@ -3,6 +3,7 @@ from .payment import Payment
 class BankTransfer(Payment):
     def __init__(self, customer):
         customer.bank_transfer_method = self
+        customer.register_payment_method(self)
         self.discount = None
 
 

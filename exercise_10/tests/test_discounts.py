@@ -22,6 +22,18 @@ class TestDiscounts:
 
         assert customer.apply_discount(order, FixedDiscount(100)) == 0
 
+    def test_discount_recalculates_after_order_changes(self):
+        customer = Customer("A", "contact")
+        cake = Dessert("Cake", "", 100, True)
+        order = customer.create_order([cake])
+        customer.apply_discount(order, PercentageDiscount(10))
+
+        order.add_item(cake)
+
+        assert order.total_price == 200
+        assert order.discount_amount == 20
+        assert order.final_total == 180
+
     def test_invalid_discounts(self):
         with pytest.raises(ValueError):
             PercentageDiscount(0)

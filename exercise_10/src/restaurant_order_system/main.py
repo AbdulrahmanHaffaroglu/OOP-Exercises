@@ -17,7 +17,7 @@ def main():
         large = Option("Large", 50)
 
         burger = MainDish("Chicken Burger", "Grilled chicken burger", 180, True, [cheese, sauce])
-        cola = Drink("Cola", "Carbonated soft drink", 0, True, [large])
+        cola = Drink("Cola", "Carbonated soft drink", True, [large])
         cake = Dessert("Chocolate Cake", "Slice of chocolate cake", 120, True)
 
         for menu_item in (burger, cola, cake):

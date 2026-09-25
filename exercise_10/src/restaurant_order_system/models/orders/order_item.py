@@ -32,9 +32,11 @@ class OrderItem():
         for order_line in self.menu_items:
             if order_line.matches(menu_item, options):
                 order_line.quantity += quantity
+                self._recalculate_discount()
                 return
 
         self.menu_items.append(OrderLine(menu_item, quantity, options))
+        self._recalculate_discount()
 
     def remove_item(self, menu_item, options=None):
         self._ensure_editable()
@@ -42,6 +44,7 @@ class OrderItem():
         for order_line in self.menu_items:
             if order_line.matches(menu_item, options):
                 self.menu_items.remove(order_line)
+                self._recalculate_discount()
                 return
 
         raise ValueError("this item is not in your order")
@@ -54,6 +57,7 @@ class OrderItem():
         for order_line in self.menu_items:
             if order_line.matches(menu_item, options):
                 order_line.quantity += amount
+                self._recalculate_discount()
                 return
 
         raise ValueError("you don't have this item in this order")
@@ -69,6 +73,7 @@ class OrderItem():
                 if order_line.quantity - amount <= 0:
                     raise ValueError("you can't reduce the quantity of an item to zero or below")
                 order_line.quantity -= amount
+                self._recalculate_discount()
                 return
 
         raise ValueError("you don't have this item in this order") 
@@ -108,6 +113,10 @@ class OrderItem():
         self.is_paid = True
         self.payment_method = payment_method
         self.paid_total = self.final_total
+
+    def _recalculate_discount(self):
+        if self.discount is not None:
+            self.discount_amount = self.discount.calculate(self.total_price)
 
     def summary(self):
         return {

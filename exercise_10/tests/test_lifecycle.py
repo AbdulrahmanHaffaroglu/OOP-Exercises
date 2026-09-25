@@ -54,3 +54,11 @@ class TestOrderLifecycle:
         assert history[0]["id"] == order.id
         assert history[0]["subtotal"] == 120
         assert history[0]["order_status"] == "Pending"
+
+    def test_status_check_requires_order_ownership(self):
+        first_customer = Customer("A", "a")
+        second_customer = Customer("B", "b")
+        order = first_customer.create_order([Dessert("Cake", "", 120, True)])
+
+        with pytest.raises(ValueError):
+            second_customer.check_order_status(order)

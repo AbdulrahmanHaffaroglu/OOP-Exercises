@@ -12,7 +12,7 @@ class TestOrders:
         customer = Customer("Abdulrahman", "contact")
         cheese = Option("Cheese", 30)
         burger = MainDish("Burger", "", 180, True, [cheese])
-        cola = Drink("Cola", "", 0, True, [Option("Large", 50)])
+        cola = Drink("Cola", "", True, [Option("Large", 50)])
         cake = Dessert("Cake", "", 120, True)
         order = customer.create_order([])
 
@@ -24,7 +24,7 @@ class TestOrders:
 
     def test_drink_requires_size_and_dessert_rejects_options(self):
         customer = Customer("A", "contact")
-        drink = Drink("Cola", "", 0, True, [Option("Small", 30)])
+        drink = Drink("Cola", "", True, [Option("Small", 30)])
         cake = Dessert("Cake", "", 120, True)
         order = customer.create_order([])
 

@@ -3,7 +3,7 @@ from .option import OptionGroup
 
 
 class Drink(MenuItem):
-    def __init__(self, name, description, price, availability, sizes=None):
+    def __init__(self, name, description, availability, sizes=None):
         super().__init__(name, description, 0, availability)
         self.sizes = OptionGroup(sizes, is_required=True)
 
