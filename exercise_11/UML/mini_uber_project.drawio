@@ -1,0 +1,267 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="PfUWJKGl5qlQtIKELzNY">
+    <mxGraphModel dx="2575" dy="1520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lw29gWBANturqS4pKSaJ-1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" value="&lt;font style=&quot;font-size: 32px;&quot;&gt;mini uber LLD&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="320" x="667" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-8" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="357" />
+              <mxPoint x="400" y="357" />
+            </Array>
+            <mxPoint x="400" y="397" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-26" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;endArrow=none;endFill=0;" target="lw29gWBANturqS4pKSaJ-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="357" />
+              <mxPoint x="162" y="357" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-76" edge="1" parent="1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="lw29gWBANturqS4pKSaJ-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-77" connectable="0" parent="lw29gWBANturqS4pKSaJ-76" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;REQUEST&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0236" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-83" edge="1" parent="1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="lw29gWBANturqS4pKSaJ-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="130" />
+            </Array>
+            <mxPoint x="410" y="209.28695652173917" as="sourcePoint" />
+            <mxPoint x="1200" y="327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-84" connectable="0" parent="lw29gWBANturqS4pKSaJ-83" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=21;" value="OWNS" vertex="1">
+          <mxGeometry relative="1" x="0.1846" as="geometry">
+            <mxPoint x="-54" y="-24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="160" width="210" x="200" y="157" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-5" parent="lw29gWBANturqS4pKSaJ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- id: string&lt;div&gt;- name: string&lt;/div&gt;&lt;div&gt;-&amp;nbsp; phone_number: string&lt;/div&gt;&lt;div&gt;- ride_history: list [ RideItem ]&lt;/div&gt;&lt;div&gt;- current_ride: RideItem&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="81" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-6" parent="lw29gWBANturqS4pKSaJ-4" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="210" y="107" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-7" parent="lw29gWBANturqS4pKSaJ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ view_current_ride(self) :: RideItem&lt;div&gt;+ view_ride_history(self) :: RideItem&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="210" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Passenger" vertex="1">
+          <mxGeometry height="128" width="210" x="320" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-10" parent="lw29gWBANturqS4pKSaJ-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- payment_methods: list [ Payment ]" vertex="1">
+          <mxGeometry height="34" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-11" parent="lw29gWBANturqS4pKSaJ-9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="210" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-12" parent="lw29gWBANturqS4pKSaJ-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ request_ride(self) :: RideItem&lt;div&gt;+ cancel_ride(self)&amp;nbsp; :: void&lt;/div&gt;&lt;div&gt;+ pay_for_ride(self) :: void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-31" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lw29gWBANturqS4pKSaJ-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-32" connectable="0" parent="lw29gWBANturqS4pKSaJ-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="OWNES" vertex="1">
+          <mxGeometry relative="1" x="0.2003" y="-1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-33" connectable="0" parent="lw29gWBANturqS4pKSaJ-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8373" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-34" connectable="0" parent="lw29gWBANturqS4pKSaJ-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7297" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-21" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Driver" vertex="1">
+          <mxGeometry height="150" width="200" x="62" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-22" parent="lw29gWBANturqS4pKSaJ-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- status: string&lt;div&gt;- vehicle: Vehicle&lt;/div&gt;&lt;div&gt;- available_drivers: List [ Driver ]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-23" parent="lw29gWBANturqS4pKSaJ-21" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="19" width="200" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-24" parent="lw29gWBANturqS4pKSaJ-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ change_status(self, status) :: void&lt;div&gt;+ accept_ride(self, ride) :: void&lt;/div&gt;&lt;div&gt;+ start_ride(self) :: void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-27" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Vehicle" vertex="1">
+          <mxGeometry height="108" width="200" x="62" y="637" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-28" parent="lw29gWBANturqS4pKSaJ-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- max_passengers: int&lt;div&gt;- base_fare: double&lt;/div&gt;&lt;div&gt;- price_per_kilometer: double&lt;/div&gt;&lt;div&gt;- vehicle_type: string&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-29" parent="lw29gWBANturqS4pKSaJ-27" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-40" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-35" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="802" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-41" connectable="0" parent="lw29gWBANturqS4pKSaJ-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;CONTAINS&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1117" y="2" as="geometry">
+            <mxPoint x="-2" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-55" connectable="0" parent="lw29gWBANturqS4pKSaJ-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8223" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-56" connectable="0" parent="lw29gWBANturqS4pKSaJ-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="n" vertex="1">
+          <mxGeometry relative="1" x="0.537" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-35" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Rides" vertex="1">
+          <mxGeometry height="140" width="220" x="718" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-36" parent="lw29gWBANturqS4pKSaJ-35" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- standart_rides: List[ RideItem ]&lt;div&gt;- premium_rides: List [ RideItem ]&lt;/div&gt;&lt;div&gt;- motorcycle_rides: List [ RideItem]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-37" parent="lw29gWBANturqS4pKSaJ-35" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="220" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-38" parent="lw29gWBANturqS4pKSaJ-35" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ assign_ride(self, ride_type) :: void&lt;div&gt;+ unassign_ride(self, ride_type) :: void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="46" width="220" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-46" edge="1" parent="1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="822" y="720" />
+            </Array>
+            <mxPoint x="822.0000000000002" y="624" as="sourcePoint" />
+            <mxPoint x="942" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-47" edge="1" parent="1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="821.5500000000002" y="624" as="sourcePoint" />
+            <mxPoint x="821.5500000000002" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-48" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="822" y="720" />
+            </Array>
+            <mxPoint x="692" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-85" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="lw29gWBANturqS4pKSaJ-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-86" connectable="0" parent="lw29gWBANturqS4pKSaJ-85" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=21;" value="USES" vertex="1">
+          <mxGeometry relative="1" x="-0.0887" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-42" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="RideItem" vertex="1">
+          <mxGeometry height="223" width="200" x="722" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-43" parent="lw29gWBANturqS4pKSaJ-42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- pickup_location: string&lt;div&gt;- destination: string&lt;/div&gt;&lt;div&gt;- num_of_passengers: string&lt;/div&gt;&lt;div&gt;- vehicle_type: string&lt;/div&gt;&lt;div&gt;- distance: int&lt;/div&gt;&lt;div&gt;- price_type: int&lt;/div&gt;&lt;div&gt;- total_price: int&lt;/div&gt;&lt;div&gt;- unpaid_price: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="129" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-44" parent="lw29gWBANturqS4pKSaJ-42" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-45" parent="lw29gWBANturqS4pKSaJ-42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ display_information(self) :: void&lt;div&gt;+ change_status(self) :: void&lt;/div&gt;&lt;div&gt;+ calulate_total_price(self) :: void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" y="163" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-49" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StandartRide&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="942" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-50" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PremiumRide&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="752" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-51" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MotorcycleRide&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="552" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-53" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-52" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1340" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-54" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-52" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1340" y="430" />
+            </Array>
+            <mxPoint x="1440" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-57" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-52" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1340" y="430" />
+            </Array>
+            <mxPoint x="1239.9999999999998" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-52" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Payment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ pay(self, ride_item) :: void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="280" x="1200" y="307" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-58" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Cash" vertex="1">
+          <mxGeometry height="30" width="140" x="1270" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-62" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="BankTransfer" vertex="1">
+          <mxGeometry height="30" width="140" x="1440" y="417" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-75" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CreditCard" vertex="1">
+          <mxGeometry height="30" width="140" x="1100" y="417" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-78" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-79" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.012;entryY=0.729;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="lw29gWBANturqS4pKSaJ-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-80" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="lw29gWBANturqS4pKSaJ-79" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="262" y="547" as="sourcePoint" />
+            <mxPoint x="470" y="609" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-79" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;ACCEPTS&lt;/font&gt;" vertex="1">
+          <mxGeometry height="34" width="100" x="410" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-81" edge="1" parent="1" source="lw29gWBANturqS4pKSaJ-27" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.945;entryDx=0;entryDy=0;entryPerimeter=0;" target="lw29gWBANturqS4pKSaJ-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-82" connectable="0" parent="lw29gWBANturqS4pKSaJ-81" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=21;" value="DECIDES PRICING" vertex="1">
+          <mxGeometry relative="1" x="-0.1035" y="-3" as="geometry">
+            <mxPoint x="-45" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="1500" width="550" x="1095" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="lw29gWBANturqS4pKSaJ-88" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelPosition=center;verticalLabelPosition=middle;" value="&lt;h1 style=&quot;&quot;&gt;SYSTEM RULES&lt;/h1&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;• &lt;font style=&quot;font-size: 17px;&quot;&gt;A ride must have a valid pickup, destination, passenger count, vehicle type, and distance.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• A vehicle must support the requested number of passengers.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• Only AVAILABLE drivers can be assigned a ride.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• A BUSY or OFFLINE driver cannot accept a ride.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• A driver cannot accept more than one ride at the same time.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• Ride lifecycle:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;REQUESTED → ACCEPTED → IN_PROGRESS →&lt;/font&gt;&lt;span style=&quot;font-size: 17px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;COMPLETED&lt;/span&gt;&lt;span style=&quot;font-size: 17px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&amp;nbsp; REQUESTED → CANCELLED&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&amp;nbsp; ACCEPTED → CANCELLED&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• An IN_PROGRESS ride cannot be cancelled.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• A ride can only be started after it is ACCEPTED.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• A ride can only be completed after it is IN_PROGRESS.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• When a ride is completed or an accepted ride is cancelled, the driver becomes AVAILABLE.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• Price = Base Fare + (Distance × Price per KM).&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• The ride price is determined when the ride is created and does not change after the ride starts.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• Payment is allowed only after the ride is COMPLETED.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• A cancelled ride cannot be paid for.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• A ride cannot be paid for more than once.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• Payment amount must be greater than zero.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• A passenger can only pay for their own ride.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• A driver can only operate their assigned vehicle.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• Passenger and driver ride histories must contain the same ride records.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;• Invalid state transitions must be rejected.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="1263" width="520" x="1110" y="700" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
