@@ -4,4 +4,5 @@ class Payment(ABC):
 
     @ abstractmethod
     def pay(self, ride_item, amount):
-        pass
+        if amount <= 0:
+            raise ValueError("you can't pay 0 or a negative amount")

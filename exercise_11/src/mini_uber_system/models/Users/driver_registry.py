@@ -7,7 +7,8 @@ class DriverRegistry:
     def register_driver(cls, driver):
         id = f"driver-{cls.id_num:03d}"
         cls.drivers[id] = driver
-        id_num += 1
+        DriverRegistry.id_num += 1
+        return id
 
 
     @classmethod

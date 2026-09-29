@@ -1,5 +1,3 @@
-from Users.driver import Driver
-
 class Ride:
     _ride_items = {}
     id = 1
@@ -7,6 +5,8 @@ class Ride:
 
     @classmethod
     def check_for_available_drivers(cls, vehicle_type):
+        from ..Users.driver import Driver
+
         available_drivers = Driver.find_available_driver(vehicle_type)
 
         if available_drivers is None:

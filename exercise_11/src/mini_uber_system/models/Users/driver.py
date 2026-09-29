@@ -1,6 +1,6 @@
 from .user import User
 from .driver_registry import DriverRegistry
-from Rides.ride_item import RideItem
+from ..Rides.ride_item import RideItem
 
 class Driver(User):
     def __init__(self, name, phone_number, vehicle):
@@ -25,13 +25,10 @@ class Driver(User):
         if self.status == 'Busy':
             raise ValueError("you can't accept ride while you are busy")
 
-        if ride_item.status != 'Requested':
-            raise ValueError("this ride is already accepted by someone else")
-
         if self.vehicle_type != ride_item.vehicle_type:
             raise ValueError("you can't accept this ride request now")
 
-        ride_item.status = 'Accepted'
+        ride_item.accept_ride()
         self.current_ride_id = ride_item.id
         self.change_status('Busy')
 
@@ -39,20 +36,15 @@ class Driver(User):
     def start_ride(self):
         ride = RideItem.find_ride_item(self.current_ride_id)
 
-        if ride.status != 'Accepted':
-            raise ValueError("you can't start this ride request now")
-
-        ride.status = 'In_Progress'
+        ride.accept_ride()
 
 
     def complete_ride(self):
         ride = RideItem.find_ride_item(self.current_ride_id)
 
-        if ride.status != 'In_Progress':
-            raise ValueError("you can't complete this ride request now")
-
-        ride.status = 'Completed'
-        self.status = 'Active'
+        ride.complete_ride()
+        self.change_status('Active')
+        
         self.current_ride_id = None
 
 

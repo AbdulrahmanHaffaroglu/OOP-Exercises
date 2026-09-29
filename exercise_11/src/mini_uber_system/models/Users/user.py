@@ -1,5 +1,5 @@
 from abc import abstractmethod, ABC
-from Rides.ride_item import RideItem
+from ..Rides.ride_item import RideItem
 
 class User(ABC):
 
