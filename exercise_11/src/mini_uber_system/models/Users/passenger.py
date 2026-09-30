@@ -7,16 +7,13 @@ class Passenger(User):
     id_num = 1
 
     def __init__(self, name, phone_number, cash_method=None, bank_transfer_method=None, credit_card_method=None):
-        
-        if all( method is None for method in (cash_method, bank_transfer_method, credit_card_method) ):
-            raise ValueError("you don't have any payment method")
 
         self.current_ride_id = None
         
         id = f"driver-{Passenger.id_num:03d}"
         Passenger.id_num += 1
         
-        super().__init__(id, name, phone_number, self.current_ride_id,  ride_history=[])
+        super().__init__(id, name, phone_number, [], self.current_ride_id)
         
         self.payment_methods = [cash_method, bank_transfer_method, credit_card_method]
         self.is_payed = False
@@ -24,16 +21,26 @@ class Passenger(User):
 
 
     def make_ride_request(self, pickup_location, destination, num_of_passengers, vehicle_type, distance):
-        
-        ride = RideItem(pickup_location, 
-                        destination, 
-                        num_of_passengers, 
-                        vehicle_type, 
-                        distance, 
-                        self)
-        
-        self.current_ride_id = ride.id
-        self.ride_history.append(ride.id) 
+
+        if self.current_ride_id:
+            raise ValueError("you can't have more than one ride request")
+
+        if all( method is None for method in self.payment_methods ):
+            raise ValueError("you should have at least one payment method before making a ride request")
+
+
+        ride_item = RideItem(pickup_location, 
+                            destination, 
+                            num_of_passengers, 
+                            vehicle_type, 
+                            distance, 
+                            self)
+            
+        self.current_ride_id = ride_item.id
+        self.ride_history.append(ride_item.id) 
+        self.is_payed = False
+
+        return ride_item
 
 
 
@@ -55,11 +62,11 @@ class Passenger(User):
 
 
     def pay_ride(self, amount, payment_method):
-        if payment_method not in self.payment_methods:
-            raise ValueError("this payment method isn't yours")
-        
         if self.current_ride_id == None:
             raise ValueError("you don't have a active ride to pay right now")
+        
+        if payment_method not in self.payment_methods:
+            raise ValueError("this payment method isn't yours")
 
         ride_item = RideItem.find_ride_item(self.current_ride_id)
 
@@ -98,4 +105,6 @@ class Passenger(User):
 
 
     def view_ride_history(self):
-        super().view_current_ride()
+        print(f"Passenger {self.name} history:")
+        print("---------")
+        super().view_ride_history()

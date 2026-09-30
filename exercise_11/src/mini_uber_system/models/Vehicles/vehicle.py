@@ -13,7 +13,7 @@ class Vehicle(ABC):
     
     def __init__(self, max_passengers: int, base_fare, price_per_kilometer, vehicle_type):
         if max_passengers <= 0:
-            raise ValueError("this is not a valid number for maximum passenger number")
+            raise ValueError("this is not a valid number of passengers")
         
         if base_fare < 0 or price_per_kilometer < 0:
             raise ValueError("we can't have negative value in charges")
@@ -43,6 +43,19 @@ class Vehicle(ABC):
         except KeyError:
             raise ValueError(f"Unknown vehicle type: {vehicle_type}") from None
 
+    @classmethod
+    def get_max_passengers(cls, vehicle_type):
+        if vehicle_type == 'standart_car':
+            return 4
+
+        elif vehicle_type == 'premium_car':
+            return 4
+        
+        elif vehicle_type == 'motorcycle':
+            return 1
+
+        else:
+            raise ValueError(f"Unknown vehicle type: {vehicle_type}") 
 
     @classmethod
     def get_vehicle(cls, vehicle_id):

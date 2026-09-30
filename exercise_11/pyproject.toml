@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-uber-system"
+version = "0.1.0"
+description = "A simulated ride-sharing platform backend"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["mini_uber_system*"]

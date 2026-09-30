@@ -7,7 +7,7 @@ class DriverRegistry:
     def register_driver(cls, driver):
         id = f"driver-{cls.id_num:03d}"
         cls.drivers[id] = driver
-        DriverRegistry.id_num += 1
+        cls.id_num += 1
         return id
 
 
@@ -16,4 +16,5 @@ class DriverRegistry:
         for driver in cls.drivers.values():
             if driver.status == "Available" and driver.vehicle_type == vehicle_type:
                 return driver
+            
         return None

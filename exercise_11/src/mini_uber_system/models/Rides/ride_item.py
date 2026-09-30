@@ -3,6 +3,13 @@ from ..Vehicles.vehicle import Vehicle
 
 class RideItem:
     def __init__(self, pickup_location, destination, num_of_passengers, vehicle_type, distance, passenger):
+        max_num_of_passengers = Vehicle.get_max_passengers(vehicle_type)
+
+        if num_of_passengers > max_num_of_passengers:
+            raise ValueError("you can't have this amount of passengers for this vehicle type")
+
+        RideItem.check_for_available_drivers(vehicle_type)
+
         self.pickup_location = pickup_location
         self.destination = destination
         self.num_of_passengers = num_of_passengers
@@ -22,12 +29,23 @@ class RideItem:
 
         self.id = Ride.register_ride_item(self)
 
+
     @classmethod
     def find_ride_item(cls, ride_item_id):
         from .ride import Ride
 
         return Ride.get_ride_item(ride_item_id)
 
+
+    @classmethod
+    def check_for_available_drivers(cls, vehicle_type):
+        from ..Users.driver import Driver
+
+        available_drivers = Driver.find_available_driver(vehicle_type)
+
+        if available_drivers is None:
+            raise ValueError("there is no available rider that can take the request")
+        
 
     def accept_ride(self):
         if self.status != 'Requested':
@@ -58,10 +76,16 @@ class RideItem:
 
 
     def display(self):
+        print(f"ride {self.id} informations:")
+        print("---------")
         print(f"Passenger: {self.passenger.name}")
         print(f"Pickup: {self.pickup_location}")
         print(f"Destination: {self.destination}")
         print(f"Passengers: {self.num_of_passengers}")
         print(f"Vehicle Type: {self.vehicle_type}")
-
-
+        print()
+        print(f"Total price: {self.total_price}")
+        print(f"Unpaid price: {self.unpaid_price}")
+        print("______________________________________")
+        print()
+        print()
