@@ -6,6 +6,11 @@ build-backend = "setuptools.build_meta"
 name = "mini-uber-system"
 version = "0.1.0"
 description = "A simulated ride-sharing platform backend"
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

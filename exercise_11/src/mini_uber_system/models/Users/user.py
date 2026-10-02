@@ -5,6 +5,16 @@ class User(ABC):
 
     @abstractmethod
     def __init__(self, id, name, phone_number, ride_history, current_ride_id):
+
+        if not isinstance(phone_number, int):
+            raise ValueError("this is not a valid phone number")
+
+        if not isinstance(name, str):
+            raise ValueError("this is not a valid name")
+
+        if len(str(phone_number)) != 10:
+            raise ValueError("phone number should contain 10 digits")
+
         self.id = id
         self.name = name
         self.phone_number = phone_number

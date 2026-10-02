@@ -43,6 +43,7 @@ class Vehicle(ABC):
         except KeyError:
             raise ValueError(f"Unknown vehicle type: {vehicle_type}") from None
 
+
     @classmethod
     def get_max_passengers(cls, vehicle_type):
         if vehicle_type == 'standart_car':

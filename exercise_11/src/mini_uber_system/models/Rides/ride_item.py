@@ -69,7 +69,7 @@ class RideItem:
 
 
     def cancell_ride(self):
-        if self.status != 'Requested' or self.status != 'Accepted':
+        if self.status != 'Requested' and self.status != 'Accepted':
             raise ValueError(f"you can't cancell ride {self.id} in this state")
 
         self.status = 'Cancelled'

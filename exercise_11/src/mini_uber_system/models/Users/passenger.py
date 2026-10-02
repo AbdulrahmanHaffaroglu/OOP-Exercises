@@ -19,7 +19,6 @@ class Passenger(User):
         self.is_payed = False
 
 
-
     def make_ride_request(self, pickup_location, destination, num_of_passengers, vehicle_type, distance):
 
         if self.current_ride_id:
@@ -43,7 +42,6 @@ class Passenger(User):
         return ride_item
 
 
-
     def cancell_ride(self):
         if self.current_ride_id == None:
             raise ValueError("you currently don't have a Active ride to cancell")
@@ -58,7 +56,6 @@ class Passenger(User):
                 driver.current_ride_id = None
 
         self.current_ride_id = None
-
 
 
     def pay_ride(self, amount, payment_method):
@@ -101,7 +98,6 @@ class Passenger(User):
 
     def view_current_ride(self):
         super().view_current_ride()
-
 
 
     def view_ride_history(self):

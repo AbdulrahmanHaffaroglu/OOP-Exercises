@@ -8,7 +8,7 @@ class BankTransfer(Payment):
             ride_item.unpaid_price -= amount
             
         else:
-           ride_item.unpaid_price -= amount
+           ride_item.unpaid_price = 0
            print(f"you paid {amount} using Bank Transfer")
            print(f"you paid more than the total price, we returned {amount - ride_item.unpaid_price}")
 
